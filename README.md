@@ -2,14 +2,17 @@
 
 This Vagrantfile provisions a basebox with a Weblogic 12c installation.
 The following is installed:
+- Java JDK8
 - Weblogic 12c AdminServer
 - A domain with name 'mydomain'
 - Standalone managed servers 'server1' and 'server2'
 - Upstart scripts for nodemanager, adminserver, server1, server2
+- Apache Maven
+- Apache Maven Weblogic plugin
 
 # Vagrant basebox
 
-The Vagrantfile assumes a minimal basebox with namne 'centos-6.7-x86_64'.
+The Vagrantfile assumes a minimal basebox with name 'centos-6.7-x86_64'.
 Add this box to vagrant, or change to another RHEL compatible box.
 
 # External dependencies
