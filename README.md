@@ -17,11 +17,12 @@ Add this box to vagrant, or change to another RHEL compatible box.
 
 # Weblogic Maven plugin
 
-copy m2 repo yo your own
-
-Test plugin:
+To test the weblogic-maven plugin as user oracle:
 
     mvn help:describe -DgroupId=com.oracle.weblogic -DartifactId=weblogic-maven-plugin -Dversion=12.2.1-2-0
+
+Configure Maven to install artifacts to a repository manager, or simply
+copy the contents of the .m2 directory to your own local repository. 
 
 # External dependencies
 
