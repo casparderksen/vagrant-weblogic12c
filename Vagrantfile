@@ -17,8 +17,9 @@ Vagrant.configure("2") do |config|
 
   # VirtualBox provider configuration
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "CentOS 6.7 - Weblogic"
+    vb.name = "CentOS 6.7 - Weblogic 12c R2"
     vb.memory = "2048"
+    vb.cpus = 2
   end
 
   # Perform shell script provisioning
